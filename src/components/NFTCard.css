@@ -1,0 +1,130 @@
+.nft-card {
+  width: 20em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.nft-img-container {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.nft-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.nft-icon-view {
+  position: absolute;
+  opacity: 0;
+  top: 42.5%;
+  left: 42.5%;
+}
+
+.nft-img-container:hover .nft-img-overlay {
+  opacity: 0.5;
+}
+
+.nft-img-container:hover .nft-icon-view {
+  opacity: 1;
+}
+
+.nft-img-container .nft-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.nft-card .nft-title {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.nft-card .nft-title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-card .nft-desc {
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 10px;
+}
+
+.nft-info,
+.nft-creator {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+}
+
+.nft-info {
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.nft-price {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-price,
+.nft-date {
+  display: flex;
+  width: 40%;
+}
+
+.nft-price img,
+.nft-date img {
+  margin-right: 5px;
+}
+
+.nft-date {
+  color: hsl(215, 51%, 70%);
+  justify-content: center;
+}
+
+.nft-creator {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.nft-creator img {
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.nft-creator .creator-name {
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-name .nft-creator-name {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+.nft-creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
