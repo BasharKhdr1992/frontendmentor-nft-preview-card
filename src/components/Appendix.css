@@ -1,0 +1,11 @@
+.attribution {
+  font-size: 11px;
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+}
+.attribution button {
+  border: none;
+  margin-top: 1em;
+  background: transparent;
+  color: hsl(228, 45%, 44%);
+}
